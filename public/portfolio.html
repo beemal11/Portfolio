@@ -1058,7 +1058,7 @@ document.querySelectorAll('.project-card').forEach(card=>{
   const emailBody = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
 
   try {
-    const API_URL = "https://your-render-backend-url.onrender.com";
+    const API_URL = "http://localhost:5000";
     const res = await fetch(`${API_URL}/send-email`, {
       method: "POST",
       headers: {
